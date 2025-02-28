@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -17,9 +19,31 @@
     </nav>
     <section>
         <h1>Contact Me</h1>
+        
+        <!-- Email Link -->
         <p>Email: <a href="mailto:ronaldbuchwald123@gmail.com">ronaldbuchwald123@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/anthony-buchwald/" target="_blank">My LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/x1antboy95" target="_blank">My GitHub</a></p>
+
+        <!-- Add Mailbox Log (Contact Form) -->
+        <h3>Send me a message:</h3>
+        <form action="https://formspree.io/f/mqknlqaw" method="POST">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="email" name="_replyto" placeholder="Your Email" required><br>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- LinkedIn and GitHub Icons with Links -->
+        <p>Connect with me:</p>
+        <p>
+            <a href="https://www.linkedin.com/in/anthony-buchwald/" target="_blank">
+                <i class="fab fa-linkedin" style="font-size: 30px; color: #0077b5;"></i> My LinkedIn
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/x1antboy95" target="_blank">
+                <i class="fab fa-github" style="font-size: 30px; color: #333;"></i> My GitHub
+            </a>
+        </p>
     </section>
 </body>
 </html>
