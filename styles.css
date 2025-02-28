@@ -3,20 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Keeping the background color from your original styles */
-    text-align: center; /* Aligns text for the whole page */
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
 header {
-    background-color: #333; /* New background color */
+    background-color: #333;
     color: white;
     padding: 20px;
-    font-size: 24px; /* You can adjust this */
+    font-size: 24px;
     text-align: center;
 }
 
 nav {
-    background: #0056b3; /* Original style */
+    background: #0056b3;
     padding: 10px 0;
 }
 
@@ -53,7 +53,7 @@ section {
 
 /* Post and Page Content */
 h1 {
-    color: #007bff; /* Keeps the blue color */
+    color: #007bff;
 }
 
 p {
@@ -73,31 +73,6 @@ p {
 
 .button:hover {
     background: #0056b3;
-}
-
-/* Blog Post List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 15px;
-}
-
-ul li a {
-    font-size: 20px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-ul li p {
-    font-size: 16px;
-    color: #555;
 }
 
 /* Form Styles */
@@ -132,6 +107,7 @@ button:hover {
 a i {
     margin-right: 10px;
 }
+
 /* Blog Post Layout */
 .blog-post {
     display: flex;
@@ -202,3 +178,4 @@ article p {
         margin-bottom: 20px;
     }
 }
+
