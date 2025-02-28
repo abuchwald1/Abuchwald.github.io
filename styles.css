@@ -1,50 +1,22 @@
+/* General layout */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Keeping the background color from your original styles */
+    text-align: center; /* Aligns text for the whole page */
 }
 
 header {
-    background-color: #007bff;
+    background-color: #333; /* New background color */
     color: white;
     padding: 20px;
-    font-size: 24px;
+    font-size: 24px; /* You can adjust this */
+    text-align: center;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #007bff;
-}
-
-p {
-    font-size: 18px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background: #0056b3;
-}
 nav {
-    background: #0056b3;
+    background: #0056b3; /* Original style */
     padding: 10px 0;
 }
 
@@ -68,11 +40,42 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-/* Style the icons */
-a i {
-    margin-right: 10px;
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Post and Page Content */
+h1 {
+    color: #007bff; /* Keeps the blue color */
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Form Styles */
 form {
     margin-top: 20px;
     text-align: center;
@@ -100,3 +103,7 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Style the icons */
+a i {
+    margin-right: 10px;
+}
