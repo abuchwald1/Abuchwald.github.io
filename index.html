@@ -18,20 +18,30 @@
                 <li><a href="web-development.html">Web Development</a></li>
                 <li><a href="cyber-security.html">Cyber Security</a></li>
                 <li><a href="tech-news.html">Tech News</a></li>
-         </ul>
-</nav>
+            </ul>
+        </nav>
     </header>
 
     <section>
         <h2>Recent Posts</h2>
         <ul>
-                <li><a href="post1.html">Windows Basics</a></li>
-                <li><a href="post2.html">Windows Server</a></li>
+            <li><a href="post1.html">Windows Basics</a></li>
+            <li><a href="post2.html">Windows Server</a></li>
         </ul>
     </section>
 
     <footer>
         <p>Connect with me on <a href="https://linkedin.com/in/anthony-buchwald">LinkedIn</a></p>
     </footer>
+
+    <!-- Place the script here before closing the body tag -->
+    <script>
+      fetch('/api/get-data')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.message); // This will log "Hello from Python!" in the browser console
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
 </body>
 </html>
