@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech News</title>
-    <style>
-        /* Basic styling */
-        .news-article {
-            margin-bottom: 20px;
-        }
-        .news-article img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-    </style>
+    <title>Latest Tech News</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
 </head>
 <body>
 
-    <h1>Latest Tech News</h1>
-    <div id="news-container">
-        <!-- News articles will be displayed here -->
+    <div class="container">
+        <h1>Latest Tech News</h1>
+        <div id="news-container">
+            <!-- News articles will be displayed here -->
+            <p>Loading the latest tech news...</p>
+        </div>
     </div>
 
     <script>
-        // Function to fetch and display news
+        // Fetch and display the latest tech news
         async function fetchNews() {
-            const apiUrl = 'https://newsdata.io/api/1/latest?apikey=pub_725228c3ca800eaab19a88a9665c5e6dbcaf6&q=donald%20trump&region=washington-united%20states%20of%20america';
+            const apiUrl = 'https://newsdata.io/api/1/latest?apikey=pub_725228c3ca800eaab19a88a9665c5e6dbcaf6&q=technology&region=us';
             
             try {
                 const response = await fetch(apiUrl);
                 const data = await response.json();
+                console.log(data);  // Log the entire response
                 
-                // Checking if articles are available
                 if (data.status === 'ok' && data.results.length > 0) {
                     const articles = data.results;
                     const newsContainer = document.getElementById('news-container');
@@ -57,7 +50,7 @@
                         newsContainer.appendChild(newsDiv);
                     });
                 } else {
-                    document.getElementById('news-container').innerHTML = 'Failed to load news. Try again later.';
+                    document.getElementById('news-container').innerHTML = 'No news found or an error occurred.';
                 }
             } catch (error) {
                 console.error('Error fetching news:', error);
@@ -65,9 +58,9 @@
             }
         }
 
-        // Fetch the news on page load
+        // Call the fetchNews function when the page loads
         window.onload = fetchNews;
     </script>
-
+    
 </body>
 </html>
